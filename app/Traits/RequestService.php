@@ -20,6 +20,7 @@ trait RequestService
     public function request($method, $baseUri, $requestUrl, $formParams = [], $headers = []) : string
     {
         $client = new Client();
+        $headers['Authorization'] = request()->header('Authorization');
         $response = $client->request($method, $baseUri.$requestUrl,
             [
                 'form_params' => $formParams,
