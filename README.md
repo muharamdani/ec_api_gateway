@@ -1,6 +1,7 @@
 ## API Gateway
 ### Requirements
 - PHP >= 8.0
+- DB MySQL
 - BCMath PHP Extension
 - Ctype PHP Extension
 - cURL PHP Extension
@@ -17,7 +18,6 @@
 ### Installation
 - run composer install
 - copy .env.example to .env
-- Config .env file
 - run php artisan key:generate
 - run php artisan serve --port=8023
 
